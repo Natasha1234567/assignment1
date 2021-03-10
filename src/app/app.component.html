@@ -1,0 +1,46 @@
+<h2>Welcome</h2>
+<div *ngFor = "let res of userDetails">
+    <p>Name : {{res.name.title}} {{res.name.first}} {{res.name.last}}</p>
+    <p>Email: {{res.email}}</p>
+    <p>Age: {{res.dob.age}}</p>
+    <p>City: {{res.location.city}}</p>
+    <p>State: {{res.location.state}}</p>
+    <p>Country: {{res.location.country}}</p>
+</div>
+
+<div>
+    <h4>Square of Even numbers</h4>
+    <div *ngFor = "let num of numbers">
+        {{num}}
+    </div>
+</div>
+
+<div>
+    <h3>Example of Tap Rxjs Operators</h3>
+    <div *ngFor = "let x of oddNumbers">
+        {{x}}
+    </div>
+</div>
+
+<div>
+    <h3>Example of Mathematical Rxjs Operators</h3>
+    <div>
+        <p>Max number is {{max}}</p>
+        <p>Min number is {{min}}</p>
+        <p>total Numbers is {{count}}</p>
+    </div>
+</div>
+
+<div>
+    <h3>Debounce Example</h3>
+    <button id="btnclick">Demo</button>
+
+    <h3>Ignore Elements</h3>
+    <p>{{message}}</p>
+</div>
+
+<div> 
+    <h3>Es6 Default Parameters example {{this.total}}</h3>
+
+    <h3>Es6 Rest and Rxjs Reduce example {{this.reduceTotal}}</h3>
+</div>
